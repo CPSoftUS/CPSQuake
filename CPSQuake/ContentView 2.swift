@@ -4,7 +4,7 @@ struct ContentView: View {
   
   @ObservedObject var networkingManager = NetworkingManager()
   
-  let pageTitle: String = "CPS Earthquakes"
+  let pageTitle: String = "Earthquakes (Past Hour)"
   
     var body: some View {
       
@@ -19,7 +19,7 @@ struct ContentView: View {
           
         
       }
-        .navigationBarTitle(Text(self.pageTitle), displayMode: .automatic)
+        .navigationBarTitle(Text(pageTitle), displayMode: .inline)
         
       }
 }

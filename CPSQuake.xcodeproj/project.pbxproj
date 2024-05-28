@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		679020A9249B226C00655C15 /* QuakeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679020A8249B226C00655C15 /* QuakeDetails.swift */; };
+		679DCA7024AAFC7900163691 /* QuakeMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679DCA6F24AAFC7900163691 /* QuakeMap.swift */; };
 		67E226DC249A960C00601790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E226DB249A960C00601790 /* AppDelegate.swift */; };
 		67E226DE249A960C00601790 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E226DD249A960C00601790 /* SceneDelegate.swift */; };
 		67E226E0249A960C00601790 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E226DF249A960C00601790 /* ContentView.swift */; };
 		67E226E2249A960E00601790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E226E1249A960E00601790 /* Assets.xcassets */; };
 		67E226E5249A960E00601790 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E226E4249A960E00601790 /* Preview Assets.xcassets */; };
 		67E226E8249A960E00601790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E226E6249A960E00601790 /* LaunchScreen.storyboard */; };
+		67E226F0249A963D00601790 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E226EF249A963D00601790 /* NetworkingManager.swift */; };
+		67E226F3249A9B8800601790 /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E226F2249A9B8800601790 /* Quake.swift */; };
+		67E226F6249AA79D00601790 /* CellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E226F5249AA79D00601790 /* CellRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		679020A8249B226C00655C15 /* QuakeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetails.swift; sourceTree = "<group>"; };
+		679DCA6F24AAFC7900163691 /* QuakeMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeMap.swift; sourceTree = "<group>"; };
+		67C44BE3249E6B39003166C0 /* CPSQuake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CPSQuake.entitlements; sourceTree = "<group>"; };
 		67E226D8249A960C00601790 /* CPSQuake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPSQuake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E226DB249A960C00601790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67E226DD249A960C00601790 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,9 @@
 		67E226E4249A960E00601790 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67E226E7249A960E00601790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67E226E9249A960E00601790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67E226EF249A963D00601790 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		67E226F2249A9B8800601790 /* Quake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quake.swift; sourceTree = "<group>"; };
+		67E226F5249AA79D00601790 /* CellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,9 @@
 		67E226DA249A960C00601790 /* CPSQuake */ = {
 			isa = PBXGroup;
 			children = (
+				67C44BE3249E6B39003166C0 /* CPSQuake.entitlements */,
+				67E226F4249AA78600601790 /* Views */,
+				67E226F1249A9B6900601790 /* Models */,
 				67E226DB249A960C00601790 /* AppDelegate.swift */,
 				67E226DD249A960C00601790 /* SceneDelegate.swift */,
 				67E226DF249A960C00601790 /* ContentView.swift */,
@@ -73,6 +87,25 @@
 				67E226E4249A960E00601790 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67E226F1249A9B6900601790 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67E226F2249A9B8800601790 /* Quake.swift */,
+				67E226EF249A963D00601790 /* NetworkingManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67E226F4249AA78600601790 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67E226F5249AA79D00601790 /* CellRow.swift */,
+				679020A8249B226C00655C15 /* QuakeDetails.swift */,
+				679DCA6F24AAFC7900163691 /* QuakeMap.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +135,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Connecting People Software";
 				TargetAttributes = {
 					67E226D7249A960C00601790 = {
@@ -146,8 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679020A9249B226C00655C15 /* QuakeDetails.swift in Sources */,
 				67E226DC249A960C00601790 /* AppDelegate.swift in Sources */,
+				67E226F0249A963D00601790 /* NetworkingManager.swift in Sources */,
+				67E226F3249A9B8800601790 /* Quake.swift in Sources */,
 				67E226DE249A960C00601790 /* SceneDelegate.swift in Sources */,
+				67E226F6249AA79D00601790 /* CellRow.swift in Sources */,
+				679DCA7024AAFC7900163691 /* QuakeMap.swift in Sources */,
 				67E226E0249A960C00601790 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +230,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -216,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,6 +291,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CPSQuake/CPSQuake.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CPSQuake/Preview Content\"";
 				DEVELOPMENT_TEAM = 4P8V9ZC6MM;
@@ -295,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.connectingpeoplesoftware.CPSQuake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CPSQuake/CPSQuake.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CPSQuake/Preview Content\"";
 				DEVELOPMENT_TEAM = 4P8V9ZC6MM;
@@ -315,6 +358,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.connectingpeoplesoftware.CPSQuake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
